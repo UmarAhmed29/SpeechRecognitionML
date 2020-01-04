@@ -48,12 +48,15 @@ def app():
             engine.runAndWait()
             print('You Said: '+text)
             if text== 'steam':
+                # subprocess.call(--- paste your system path here ---)
                 subprocess.call('C:/Program Files (x86)/Steam/Steam.exe')
             elif text=='NetBeans':
-                subprocess.call('C:/Users/Rijin Thomas/Downloads/netbeans-11.1-bin/netbeans/bin/netbeans64.exe')
+                # subprocess.call(--- paste your system path here ---)
+                subprocess.call('C:/Program Files/NetBeans 8.2/bin/netbeans64.exe')
             elif text=='YouTube':
                 wb.open('https://www.youtube.com/')
             elif text=='VLC':
+                # subprocess.call(--- paste your system path here ---)
                 subprocess.call("C:/Program Files (x86)/VideoLAN/VLC/vlc.exe")
             else:
                 print("Sorry! App not found!, Please try again")
